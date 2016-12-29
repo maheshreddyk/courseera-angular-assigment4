@@ -1,0 +1,18 @@
+
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Speical Instructions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="item in $ctrl.items | orderBy : 'short_name'">
+      <td><a ui-sref="items({categoryId: item.short_name})" > {{item.short_name}}</a></td>
+
+      <td>{{item.name}}</td>
+      <td>{{item.special_instructions}}</td>
+    </tr>
+  </tbody>
+</table>
