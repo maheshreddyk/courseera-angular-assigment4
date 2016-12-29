@@ -1,0 +1,22 @@
+.emptyMessage {
+  font-weight: bold;
+  color: red;
+  font-size: 1.2em;
+  display:none;
+}
+li {
+  margin-bottom: 7px;
+  font-size: 1.2em;
+}
+li > button {
+  margin-left: 6px;
+}
+button > span {
+  color: green;
+}
+
+.loading-icon {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+}

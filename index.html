@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" ng-app="restaurantModule">
+  <head>
+    <title>Narrow Down Your Menu Choice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script  src="https://code.jquery.com/jquery-3.1.1.min.js"  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="  crossorigin="anonymous"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"   crossorigin="anonymous"></script>
+
+    <!-- Restaurant Module -->
+    <script src="src/Spinner/spinnerModule.js"></script>
+    <script src="src/Restaurant/restaurantModule.js"></script>
+    <script src="src/Restaurant/config/routeConfig.js"></script>
+    <script src="src/Restaurant/services/MenuDataService.js"></script>
+    <script src="src/Restaurant/controllers/CategoryController.js"></script>
+    <script src="src/Restaurant/controllers/MenuController.js"></script>
+
+    <!-- Spinner Module -->
+<script src="src\Spinner\controllers\LoadingSpinnerController.js"></script>
+      <script src="src\Spinner\components\spinnerComponent.js"></script>
+
+
+  </head>
+<body>
+   <div class="container" >
+    <h1>Welcome to SPA Restaurant</h1>
+
+    <ui-view></ui-view>
+    <loading-spinner></loading-spinner>
+  </div>
+
+</body>
+</html>
